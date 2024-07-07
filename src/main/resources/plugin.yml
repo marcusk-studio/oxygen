@@ -1,0 +1,5 @@
+name: oxygen
+version: '${project.version}'
+main: org.leafd.oxygen.Oxygen
+api-version: '1.19'
+softdepend: [PlaceholderAPI]
