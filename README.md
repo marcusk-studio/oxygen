@@ -23,7 +23,7 @@ It can be used with [PlaceHolderAPI](https://github.com/PlaceholderAPI/Placehold
 ## Discord
 
 Join our
-[discord](discord.gg/marcusk) !
+[discord](https://discord.gg/marcusk) !
 
 
 <!-- markdownlint-restore -->
