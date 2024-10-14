@@ -1,0 +1,8 @@
+{
+  "packages": {
+    "sulla": {
+      "package-name": "oxygen",
+      "release-type": "maven"
+    }
+  }
+}
