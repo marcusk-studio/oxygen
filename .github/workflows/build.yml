@@ -28,17 +28,20 @@ jobs:
         with:
           fetch-depth: 0
           token: ${{ secrets.PAT }}
+      
       - name: JDK Setup
         uses: actions/setup-java@v3
         with:
           cache: maven
           java-version: '17'
           distribution: temurin
+      
       - name: Maven Package
         run: |
           mvn --batch-mode clean package
-          test -f ./target/*-shaded.jar
+          find ./target -name "*.jar" -type f | grep . >/dev/null
         working-directory: ${{ inputs.path }}
+      
       - name: Upload Artifact to Release
         if: github.event_name == 'workflow_call'
         uses: shogo82148/actions-upload-release-asset@v1.7.2
@@ -48,6 +51,7 @@ jobs:
           asset_path: ./${{ inputs.path }}/target/*.jar
           asset_content_type: application/java-archive
           overwrite: true
+      
       - name: Publish to GitHub Packages
         run: mvn --batch-mode deploy
         env:
