@@ -1,6 +1,6 @@
 {
   "packages": {
-    "sulla": {
+    "oxygen": {
       "package-name": "oxygen",
       "release-type": "maven"
     }
