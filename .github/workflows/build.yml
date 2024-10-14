@@ -37,7 +37,7 @@ jobs:
       - name: Maven Package
         run: |
           mvn --batch-mode clean package
-          test -f ./target/*.jar
+          test -f ./target/*-shaded.jar
         working-directory: ${{ inputs.path }}
       - name: Upload Artifact to Release
         if: github.event_name == 'workflow_call'
