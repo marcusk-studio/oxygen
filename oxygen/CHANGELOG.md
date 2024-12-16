@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/marcusk-studio/oxygen/compare/oxygen-v1.0.0...oxygen-v1.0.1) (2024-12-16)
+
+
+### Bug Fixes
+
+* add distribution management to pom.xml ([e27f531](https://github.com/marcusk-studio/oxygen/commit/e27f53161fad5cca7c069f78853ae58ae2980ab0))
+
 ## 1.0.0 (2024-10-14)
 
 
