@@ -6,13 +6,20 @@
   <artifactId>oxygen</artifactId>
   <version>1.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
-
   <name>oxygen</name>
 
   <properties>
     <java.version>1.8</java.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
+
+  <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>GitHub Packages</name>
+            <url>https://maven.pkg.github.com/marcusk-studio/oxygen</url>
+        </repository>
+    </distributionManagement>
 
   <build>
     <plugins>
